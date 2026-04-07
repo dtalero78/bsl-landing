@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.bsl.com.co/sitemap.xml
