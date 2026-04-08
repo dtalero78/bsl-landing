@@ -242,7 +242,7 @@
     .hero h1 em{font-style:normal;color:var(--accent)}
     .hero p{font-size:1.15rem;color:rgba(255,255,255,.85);margin-bottom:1.5rem;max-width:540px;line-height:1.7}
     .hero-doctor{display:flex;align-items:center;gap:1rem;margin-bottom:2rem;background:rgba(255,255,255,.08);padding:.75rem 1.25rem;border-radius:var(--radius);border:1px solid rgba(255,255,255,.1);max-width:fit-content}
-    .hero-doctor-avatar{width:48px;height:48px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.25rem;font-weight:800;color:var(--primary-dark);flex-shrink:0}
+    .hero-doctor-avatar{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--accent)}
     .hero-doctor-info .name{font-weight:700;font-size:.95rem}
     .hero-doctor-info .title{font-size:.8rem;color:rgba(255,255,255,.65)}
     .hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
@@ -329,7 +329,7 @@
     /* DOCTOR */
     .doctor{background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary) 100%);color:var(--white)}
     .doctor-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:center}
-    .doctor-photo{width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.1);border:3px solid var(--accent);display:flex;align-items:center;justify-content:center;font-size:4rem;font-weight:800;color:var(--accent)}
+    .doctor-photo{width:200px;height:200px;border-radius:50%;border:3px solid var(--accent);object-fit:cover}
     .doctor-info .overline{font-size:.85rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:.5rem}
     .doctor-info h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;margin-bottom:.75rem}
     .doctor-info p{color:rgba(255,255,255,.8);font-size:1rem;line-height:1.7;margin-bottom:.75rem}
@@ -381,7 +381,7 @@
       .hero-locations{grid-template-columns:1fr 1fr 1fr}
       .about-grid{grid-template-columns:1fr}
       .doctor-inner{grid-template-columns:1fr;text-align:center}
-      .doctor-photo{margin:0 auto;width:150px;height:150px;font-size:3rem}
+      .doctor-photo{margin:0 auto;width:150px;height:150px}
       .doctor-creds{justify-content:center}
       .results-grid{grid-template-columns:1fr}
       .locations-grid{grid-template-columns:1fr}
@@ -408,7 +408,7 @@
       .hero p{font-size:1rem;margin-bottom:1.25rem;margin-left:auto;margin-right:auto}
       .hero-badge{font-size:.78rem;padding:.35rem .85rem;margin-bottom:1rem}
       .hero-doctor{margin:0 auto 1.5rem;padding:.6rem 1rem}
-      .hero-doctor-avatar{width:40px;height:40px;font-size:1rem}
+      .hero-doctor-avatar{width:40px;height:40px}
       .hero-doctor-info .name{font-size:.88rem}
       .hero-doctor-info .title{font-size:.75rem}
       .hero-actions{justify-content:center;gap:.75rem}
@@ -460,7 +460,7 @@
       .location-card .address{font-size:.9rem}
 
       .doctor-inner{gap:1.5rem}
-      .doctor-photo{width:120px;height:120px;font-size:2.5rem}
+      .doctor-photo{width:120px;height:120px}
       .doctor-info h2{font-size:1.35rem}
       .doctor-info p{font-size:.9rem}
       .cred{font-size:.72rem;padding:.3rem .65rem}
@@ -538,7 +538,7 @@
         <h1>Exámenes Médicos <em>OEUK</em> para Trabajadores Offshore en Colombia</h1>
         <p>Certificado médico offshore (OEUK/OGUK) para la industria de petróleo, gas y energías renovables. Tres sedes en Colombia con resultados el mismo día.</p>
         <div class="hero-doctor">
-          <div class="hero-doctor-avatar">JR</div>
+          <img src="drFoto.jpeg" alt="Dr. Juan José Reátiga" class="hero-doctor-avatar">
           <div class="hero-doctor-info">
             <div class="name">Dr. Juan José Reátiga</div>
             <div class="title">Médico Certificado OEUK</div>
@@ -770,7 +770,7 @@
     <!-- DOCTOR -->
     <section class="doctor" id="doctor" aria-labelledby="doctor-title">
       <div class="doctor-inner">
-        <div class="doctor-photo">JR</div>
+        <img src="drFoto.jpeg" alt="Dr. Juan José Reátiga" class="doctor-photo">
         <div class="doctor-info">
           <div class="overline">Tu Médico OEUK</div>
           <h2 id="doctor-title">Dr. Juan José Reátiga</h2>
