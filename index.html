@@ -944,6 +944,21 @@
         if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});links.classList.remove('open')}
       });
     });
+
+    // WhatsApp visit notification
+    (function(){
+      try{
+        var page=location.pathname||'/';
+        var ref=document.referrer?new URL(document.referrer).hostname:'directo';
+        var now=new Date().toLocaleString('es-CO',{timeZone:'America/Bogota'});
+        var msg='\u{1F4C4} Pagina: '+page+'\n\u{1F517} Referido: '+ref+'\n\u{1F550} '+now;
+        fetch('https://gate.whapi.cloud/messages/text',{
+          method:'POST',
+          headers:{'Content-Type':'application/json','Authorization':'Bearer due3eWCwuBM2Xqd6cPujuTRqSbMb68lt'},
+          body:JSON.stringify({to:'573008021701',body:msg})
+        }).catch(function(){});
+      }catch(e){}
+    })();
   </script>
 </body>
 </html>
